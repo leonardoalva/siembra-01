@@ -64,15 +64,21 @@ button:hover {
     flex-wrap: wrap;
 }
 
+.container-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 header .container {
     padding: 25px 30px;
     display: flex;
     flex-direction: column;
 }
 
-header nav{
+nav{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     background-color: rgb(160, 160, 160);
     margin: 0;
@@ -81,9 +87,8 @@ header nav{
     width: 100%;
 }
 
-header nav ul {
-    display: inline-flex;
-    align-items: center;
+nav ul {
+    display: flex;
     height: 10vh;
     background-color: rgb(160, 160, 160);
     margin: 4px;
@@ -92,6 +97,7 @@ header nav ul {
 
  /* ------------------TEXTO DE LOGO ------------------- */
 .logo {
+
     text-align: center;
     font-size: 3.2em;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
@@ -158,7 +164,8 @@ header div.horarios div.container  {
 
 /* <!------------------ FORMULARIO DE SUSCRIPCION ----------------> */
 div.formulario-subs {
-    background-color: #57886c;
+    color: black;
+    background-color: rgb(221, 221, 221);
 }
 
 .input-subs {
@@ -194,14 +201,14 @@ div.contact {
 }
 
 /*----------------------------- flexbox para imagenes de comentarios ---------------- */
-div.comentario-img {
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 24%;
-    height: 100%;
-}
 
 div.comentario-img img {
     width: 300px;
+}
+
+div.container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
