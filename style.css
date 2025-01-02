@@ -53,11 +53,14 @@ button:hover {
 }
 
 .container {
+    display: flex;
     min-width: 360px;
     max-width: 100%;
     margin: auto;
+    justify-content: space-evenly;
     text-align: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header .container {
@@ -88,15 +91,17 @@ header nav ul {
 
  /* ------------------TEXTO DE LOGO ------------------- */
 .logo {
+    text-align: center;
     font-size: 3.2em;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-evenly;
 }
 
 footer {
     height: 30vh;
     background-color: cornsilk;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -104,6 +109,7 @@ footer {
 .cta-comprar {
     background-color: cornsilk;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 20px 15px;
@@ -184,4 +190,17 @@ div.contact {
 #mapa-iframe {
     width: 100%;
     height: 50vw;
+}
+
+/*----------------------------- flexbox para imagenes de comentarios ---------------- */
+div.comentario-img {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 24%;
+    height: 100%;
+}
+
+div.comentario-img img {
+    width: 300px;
 }
