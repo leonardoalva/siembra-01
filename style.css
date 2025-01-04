@@ -64,8 +64,10 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.container-flex {
+.container-cartas {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -77,9 +79,9 @@ header .container {
 
 nav{
     display: flex;
-    flex-direction: column;
+    gap: 30px;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     background-color: rgb(160, 160, 160);
     margin: 0;
     padding: 0;
@@ -216,12 +218,5 @@ div.contact {
 /*----------------------------- flexbox para imagenes de comentarios ---------------- */
 
 div.comentario-img img {
-    width: 300px;
-}
-
-div.container-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    width: 50vh;
 }
