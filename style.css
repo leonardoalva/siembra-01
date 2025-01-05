@@ -200,9 +200,13 @@ main div div img {
     width: 40%;
 }
 
-/* DIV CONTACTO MARGEN */
+/* --------------------------CONTACTO ----------------------*/
+
 
 div.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 40px;
 }
 
