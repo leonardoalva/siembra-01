@@ -8,14 +8,17 @@ html {
 
 body{
     margin: 0;
-    font-family: "Dosis", serif;
+    font-family: "Roboto", serif;
 }
 
-h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+h1 {  font-family: "Roboto", serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 3.5em;
     width: 100%;
     min-width: 400px;}
-h2 {font-size: 2.7em;}
+h2 {font-family: "Roboto", serif;
+    font-size: 2.7em;}
 p {font-size: 1.30em;}
 ul {list-style: none;}
 li {font-size: 1.5em;
@@ -149,6 +152,7 @@ section {
 
 /*------------------ DIV DE LA TABLA DE HORARIOS-----------------------*/
 main div.horarios div.container  {
+    font-family: "Roboto", serif;
     background-color: #57886c;
     color: white;
     display: flex;
