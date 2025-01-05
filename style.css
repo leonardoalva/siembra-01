@@ -58,7 +58,7 @@ button:hover {
     min-width: 360px;
     max-width: 100%;
     margin: auto;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
@@ -148,31 +148,18 @@ section {
 }
 
 /*------------------ DIV DE LA TABLA DE HORARIOS-----------------------*/
-main div.horarios {
+header div.horarios div.container  {
     background-color: #57886c;
     color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 50px;
-    text-align: center;
-}
-
-h2#titulo-horario {
-margin: 0px;
-}
-table.tabla-horario {
-    padding: 0;
-}
-
-div.horarios {
-    padding-bottom: 50px;
-
 }
 
 /*----------------------TABLA DE HORARIOS----------------------------*/
 .tabla-horario, .tabla-horario th, .tabla-horario td {
-    padding: 15px;
+    padding: 10px;
     font-size: 1.3em;
     text-shadow: 2px 2px 5px grey;
 }
