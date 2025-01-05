@@ -100,7 +100,7 @@ nav ul {
     padding: 4px;
 }
 
- /* ------------------TEXTO DE LOGO ------------------- */
+ /* ----------------------------------------------TEXTO DE LOGO ------------------- */
 .logo {
 
     text-align: center;
@@ -127,7 +127,7 @@ footer {
     padding: 20px 15px;
 }
 
-/*--------------- SECCION DE BANNER LOGO---------------------------*/
+/*----------------------------------- SECCION DE BANNER LOGO---------------------------*/
 header section #hero {
     background-image: linear-gradient(
         0deg,
@@ -150,7 +150,7 @@ section {
     width: 100%;
 }
 
-/*------------------ DIV DE LA TABLA DE HORARIOS-----------------------*/
+/*---------------------------- DIV DE LA TABLA DE HORARIOS-----------------------*/
 main div.horarios div.container  {
     font-family: "Roboto", serif;
     background-color: #57886c;
@@ -166,14 +166,14 @@ main div.horarios div.container  {
     margin: 0;
 }
 
-/*----------------------TABLA DE HORARIOS----------------------------*/
+/*------------------------------TABLA DE HORARIOS----------------------------*/
 .tabla-horario, .tabla-horario th, .tabla-horario td {
     padding: 10px;
     font-size: 1.3em;
     text-shadow: 2px 2px 5px grey;
 }
 
-/* <!------------------ FORMULARIO DE SUSCRIPCION ----------------> */
+/* <!-------------------------- FORMULARIO DE SUSCRIPCION -----------------------> */
 div.formulario-subs {
     color: black;
     background-color: rgb(221, 221, 221);
@@ -195,25 +195,48 @@ div div div form {
     padding-bottom: 60px;
 }
 
-/* comentarios */
-main div div img {
-    width: 40%;
+
+/* ------------------------------CONTACTO -----------------------------------*/
+#container-contact  {
+    background-color: #57886c;
 }
-
-/* --------------------------CONTACTO ----------------------*/
-
 
 div.contact {
+    padding: 50px 15px 50px 15px;
     display: flex;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 40px;
+
 }
 
+/*--------------------------------- CLASES DE CONTACTOS -------------------- */
+.instagram{
+    width: 30%;
+}
+
+.email{
+    width: 30%;
+}
+
+.wsp-contacto{
+    width: 30%;
+}
+
+/* ---------------------------------MAPA DE COMO LLEGAR -------------------------- */
 #mapa-iframe {
     width: 100%;
     height: 50vw;
 }
+
+
+
+/* ----------------------------------comentarios-------------------------- */
+main div div img {
+    width: 40%;
+}
+
+
 
 /*----------------------------- flexbox para imagenes de comentarios ---------------- */
 
