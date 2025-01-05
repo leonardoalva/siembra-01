@@ -110,6 +110,7 @@ nav ul {
 }
 
 footer {
+    color: rgb(31, 31, 31);
     height: 30vh;
     background-color: cornsilk;
     display: flex;
@@ -159,7 +160,7 @@ main div.horarios div.container  {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 40px;
+    padding: 100px 10px;
 }
 
 #titulo-horario {
@@ -198,7 +199,9 @@ div div div form {
 
 /* ------------------------------CONTACTO -----------------------------------*/
 #container-contact  {
+    padding: 200px 0px;
     background-color: #57886c;
+    color: whitesmoke;
 }
 
 div.contact {
