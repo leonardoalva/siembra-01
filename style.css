@@ -165,6 +165,11 @@ main div.horarios div.container  {
     margin: 0;
 }
 
+table.tabla-horario {
+    width: 100%;
+    padding: 50px 0px;
+}
+
 /*------------------------------TABLA DE HORARIOS----------------------------*/
 container .tabla-horario {
     width: 100%;
