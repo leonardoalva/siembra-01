@@ -29,7 +29,7 @@ ul {list-style: none;
 li {font-size: 1.5em;
     font-weight: 300;
     color: white;
-    padding: 10px;    
+    padding: 10px;
 }
 a:hover {
     color: cornsilk;
@@ -218,7 +218,7 @@ div.formulario-subs {
 
 div div div form ul li {
     padding: 5px;
-} 
+}
 
 div div div form {
     padding-bottom: 60px;
@@ -227,30 +227,57 @@ div div div form {
 
 /* ------------------------------CONTACTO -----------------------------------*/
 #container-contact  {
-    padding: 200px 0px;
+    padding: 100px 0px;
     background-color: #57886c;
     color: whitesmoke;
 }
 
 div.contact {
-    padding: 50px 15px 50px 15px;
+    height: 100%;
+    padding: 5px 15px 5px 15px;
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
 }
+
+div.instagram h2 {
+    margin-bottom: 30px;
+}
+
+.container-contact {
+    min-width: 360px;
+    max-width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+
 
 /*--------------------------------- CLASES DE CONTACTOS -------------------- */
 .instagram{
+    text-shadow: 2px 2px 4px grey;
     width: 30%;
+    margin-bottom: 50px;
 }
 
+div.email h2 {
+    margin-bottom: 30px;
+}
 .email{
+    text-shadow: 2px 2px 4px grey;
     width: 30%;
+    margin-bottom: 50px;
 }
-
+div.wsp-contacto h2 {
+    margin-bottom: 30px;
+}
 .wsp-contacto{
+    text-shadow: 2px 2px 4px grey;
     width: 30%;
 }
 
@@ -279,7 +306,7 @@ div.contact {
 
 
 @media (min-width: 600px) {
-        
+
     nav{
         display: flex;
         gap: 30px;
@@ -299,7 +326,7 @@ div.contact {
         padding: 4px;
         justify-content: space-evenly;
         text-align: center;}
-    
+
     #siembra {
         font-size: 15vw;
     }
