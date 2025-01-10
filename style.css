@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +19,6 @@ h1 {font-family: "Roboto", serif;
     font-style: normal;
     font-size: 3.5em;
     width: 100%;
-    min-width: 400px;
     margin: 0;}
 h2 {font-family: "Roboto", serif;
     font-size: 2.7em;}
@@ -28,7 +28,7 @@ ul {width: 100%;
     margin: 0;
     padding: 0;
 }
-li {font-size: 1.2em;
+li {font-size: 1.6em;
     font-weight: 300;
     color: white;
     padding: 10px;
@@ -120,6 +120,7 @@ nav ul {
 }
 
 footer {
+    
     color: rgb(233, 233, 233);
     padding: 100px 10px;
     background-color: rgb(34, 34, 34);
@@ -132,6 +133,7 @@ footer {
 .comprar {
     position: relative;
     bottom: 50px;
+    font-size: 1.7em;
 }
 /*---------------------- BOTON CTA PARA COMPRAR EN FUDO APP --------------------------- */
 .cta-comprar {
@@ -173,50 +175,52 @@ section {
 /*---------------------------- DIV DE LA TABLA DE HORARIOS-----------------------*/
 main div.horarios{
     font-family: "Roboto", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #57886c;
     color: white;
     text-shadow: 2px 2px 5px rgb(34,34,34);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100vw;
     padding: 100px 0px;
 }
 
 #titulo-horario {
     margin: 0;
-    display:
 }
 
 
 /*------------------------------TABLA DE HORARIOS----------------------------*/
 .tabla-horario {
-    width: 50vw;
-    padding: 10px;
-
-}
-.tabla-horario th{
-    padding: 10px;
-    width: 30%;
-    font-size: 1.3em;
-}
-.tabla-horario td {
-    padding: 5px;
-    width: 30%;
     text-align: center;
-    font-size: 1.1em;
+    padding: 10px;
+}
+
+.container-horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+table th, table td {
+    padding: 5px;
 }
 
 /* <!-------------------------- FORMULARIO DE SUSCRIPCION -----------------------> */
 div.formulario-subs {
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
     color: black;
     background-color: #57886c;
 }
 
 .input-subs {
-    width: 200px;
+    width: 100%;
     height: 40px;
     border: 1px solid black;
     border-radius: 30px;
@@ -228,22 +232,34 @@ div div div form ul li {
 }
 
 div div div form {
-    padding-bottom: 60px;
+    width: 100%;
+    padding-bottom: 30px;
 }
 
+main div div div.div-form{
+    width: 80%;
+}
 h1.titulo-subs {
-    padding-top: 50px ;
-    margin-bottom: 40px;
+    padding: 30px 0px 50px 0px;
     color: rgb(233, 233, 233);
     text-shadow: 2px 2px 5px black;
+    font-size: 2em;
+    width: 100%;
 }
 
 .span-sub {
-    display: ;
+width: 100%;
 }
 
 #suscripcion-bot {
     margin-top: 50px;
+}
+
+.container-subs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 /* ------------------------------CONTACTO -----------------------------------*/
@@ -251,10 +267,9 @@ h1.titulo-subs {
 
 div.contact {
     height: 70vh;
-    padding: 5px 15px 5px 15px;
+    padding: 50px 15px 60px 15px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
     flex-wrap: nowrap;
     justify-content: center;
     flex-direction: column;
@@ -266,28 +281,24 @@ div.instagram h2 {
 }
 
 .container-contact {
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    padding: 100px 20px;    
+    padding: 50px 10px;    
     color: whitesmoke;
-    max-width: 100%;
-    margin: auto;
-    justify-content: center;
     text-align: center;
-    align-items: center;
     background-color: #57886c
 }
 
 #contact h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
-
 
 /*--------------------------------- CLASES DE CONTACTOS -------------------- */
 .instagram{
     align-items: center;
     text-shadow: 2px 2px 4px grey;
-    width: 30%;
+    width: 100%;
     margin-bottom: 50px;
 }
 
@@ -297,7 +308,7 @@ div.email h2 {
 .email{
     align-items: center;
     text-shadow: 2px 2px 4px grey;
-    width: 30%;
+    width: 100%;
     margin-bottom: 50px;
 }
 div.wsp-contacto h2 {
@@ -306,7 +317,7 @@ div.wsp-contacto h2 {
 .wsp-contacto{
     align-items: center;   
     text-shadow: 2px 2px 4px grey;
-    width: 30%;
+    width: 100%;
 }
 
 /* ---------------------------------MAPA DE COMO LLEGAR -------------------------- */
@@ -319,18 +330,27 @@ div.wsp-contacto h2 {
 
 /* ----------------------------------comentarios-------------------------- */
 .container-cartas {
-    padding: 50px 10px;
+    padding: 20px 15px;
     width: 100%;
     display: grid;
-    gap: 60px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
-.divs-cartas img {
+img {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#comment1, #comment2, #comment10, #comment9{
+    display: none;
+}
 
 @media (min-width: 600px) {
 
