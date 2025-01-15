@@ -35,7 +35,7 @@ li {font-size: 1.6em;
 a:hover {
     text-transform: uppercase;
     color: cornsilk;
-    text-shadow: 1px 1px 10px rgba(78, 78, 78, 0.514);
+    text-shadow: 1px 1px 10px rgb(159, 159, 159);
 }
 a { text-transform: uppercase;
     font-weight: bolder;
@@ -83,11 +83,13 @@ header .container {
 
 }
 
-nav{   
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     background-color: #3D3D3D;
     margin: 0;
     padding: 40px;
-    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.685);
     position: sticky;
     top: 0;
 }
@@ -162,7 +164,7 @@ header section #hero {
 }
 
 section {
-    width: 100vw;
+    width: 100%;
 }
 
 /*---------------------------- DIV DE LA TABLA DE HORARIOS-----------------------*/
@@ -186,6 +188,7 @@ main div.horarios{
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
 }
 
 .tabla-horario {
@@ -258,7 +261,7 @@ h1.titulo-subs {
 div.contact {
     height: 70%;
     padding: 30px 15px 30px 15px;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     flex-direction: column;
@@ -309,10 +312,13 @@ div.wsp-contacto h2 {
 
 /* ---------------------------------MAPA DE COMO LLEGAR -------------------------- */
 #mapa-iframe {
+
     width: 100%;
     height: 65vh;
 }
-
+div.mapa-google {
+    background-color: #3D3D3D;
+}
 
 
 /* ----------------------------------comentarios-------------------------- */
@@ -360,7 +366,7 @@ img {
     }
 
     nav ul {
-        width: 100vw;
+        width: 90vw;
         display: flex;
         margin: 4px;
         padding: 4px;
@@ -392,12 +398,104 @@ img {
     display: flex;
     }
 /*SUBSCRIPCION*/
-.input-subs {
+    .input-subs {
     width: 60vw;
-}
-
-}
-
-    @media (min-width: 1024px) {
-
+    
+    footer{
+    padding: 50px 0px;
     }
+    }
+
+
+@media (min-width:1024px) {
+    ul {
+    }
+    li {
+    font-size: 1.9m;
+    }
+    nav {
+
+    height: 10vh;
+    }
+
+    #siembra {
+    font-size: 9vw;
+    }
+    header section #hero {
+    display: flex;
+    height: 80vh;
+    }
+/*horarios de inicio*/
+    main div.horarios {
+    align-items: center;
+    } 
+
+    table th, table td {
+    font-size: 2.3vw;
+    }
+    .tabla-horario {
+    width: 70%;
+    }
+    .container-horario {
+    width: 100%;
+    align-items: center;
+    }
+/* suscripcion */
+    .container-subs {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    }
+    .span-sub {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: end;
+    text-align: center;
+    }
+    main div div div.div-form {
+    width: 50%;
+    }
+    div.formulario-subs{
+    padding: 40px 0px;
+    }
+    .input-subs {
+    width: 50%;
+    }
+/*comentarios cambio de grid a desktop version*/
+    .container-cartas{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    }
+
+    img {
+    width: 90%;
+    }
+/* mapa */
+    #mapa-iframe {
+    height: 90vh;
+    width: 100%;
+    }
+    div.mapa-google {
+    background-color: #3D3D3D;
+    }
+/* footer comprar*/
+    .comprar {
+    position: initial;
+    font-size: 2.5em;
+    }
+    footer div.container {
+    display: flex;
+    flex-direction: row;
+    }
+    .container {
+    width: 70%;
+    }
+    footer {
+    padding: 50px 0px;
+    }
+}
