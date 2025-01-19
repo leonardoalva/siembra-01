@@ -83,26 +83,6 @@ header .container {
 
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #3D3D3D;
-    margin: 0;
-    padding: 40px;
-    position: sticky;
-    top: 0;
-}
-
-
-nav ul {
-    padding: 4px;
-    justify-content: space-between;
-    text-align: center;
-    
-}
-    
-
  /* ----------------------------------------------TEXTO DE LOGO ------------------- */
 
 #siembra {
@@ -139,7 +119,7 @@ footer div.container {
     font-size: 2em;
 }
 /*----------------------------------- SECCION DE BANNER LOGO---------------------------*/
-header section #hero {
+header section #logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,12 +152,13 @@ main div.horarios{
     font-family: "Roboto", serif;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-content: center;
     background-color: #578E7E;
     color: white;
     text-shadow: 2px 2px 5px rgb(34,34,34);
     text-align: center;
-    width: 100vw;
+    width: 100%;
     padding: 100px 0px;
 }
 
@@ -308,7 +289,9 @@ div.wsp-contacto h2 {
     align-items: center;   
     text-shadow: 2px 2px 4px grey;
     width: 100%;
+    margin-bottom: 50px;
 }
+
 
 /* ---------------------------------MAPA DE COMO LLEGAR -------------------------- */
 #mapa-iframe {
@@ -350,29 +333,29 @@ img {
     display: none;
 }
 
+.img-contact {    
+    display: none;
+    box-shadow: none;
+    border: none;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 600px) {
 
-/* NAV 600-1030PX*/
-    nav{
-        height: 10vh;
-        display: flex;
-        gap: 30px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #3D3D3D;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav ul {
-        width: 90vw;
-        display: flex;
-        margin: 4px;
-        padding: 4px;
-        justify-content: space-evenly;
-        text-align: center;
-    }
 
 /*HERO*/
     #siembra {
@@ -408,20 +391,11 @@ img {
 
 
 @media (min-width:1024px) {
-    ul {
-    }
-    li {
-    font-size: 1.9m;
-    }
-    nav {
-
-    height: 10vh;
-    }
 
     #siembra {
     font-size: 9vw;
     }
-    header section #hero {
+    header section #logo {
     display: flex;
     height: 80vh;
     }
@@ -479,10 +453,13 @@ img {
     #mapa-iframe {
     height: 90vh;
     width: 100%;
+    box-shadow: 1px 1px 30px #F5ECD5;
     }
     div.mapa-google {
+    padding: 30px 20px;
     background-color: #3D3D3D;
     }
+    
 /* footer comprar*/
     .comprar {
     position: initial;
@@ -498,4 +475,39 @@ img {
     footer {
     padding: 50px 0px;
     }
+}
+
+div.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr;
+}
+.instagram {
+    display: flex;
+    width: 30vw;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email {
+    display: flex;
+    width: 30vw;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wsp-contacto {
+    display: flex;
+    width: 30vw;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px 0px 50px 0px;
+}
+
+.img-contact {
+    display: flex;
 }
