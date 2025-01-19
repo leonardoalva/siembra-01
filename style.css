@@ -46,10 +46,10 @@ a { text-transform: uppercase;
 
 
 button {
-    background-color: rgb(160, 160, 160);
-    font-size: 1.2em;
+    background-color: #57886c;
+    font-size: 1.5em;
     font-weight: bold;
-    border: 1px solid rgb(233, 233, 233);
+    border: 1px solid #3D3D3D;
     border-radius: 20px;
     padding: 15px 30px;
     color: white;
@@ -61,32 +61,14 @@ button:hover {
     color: #3D3D3D;
 }
 
-.container {
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
-    justify-content: space-evenly;
-    text-align: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
 header {
     position: relative;
 }
 
-header .container {
-    padding: 25px 30px;
-    display: flex;
-    flex-direction: column;
-
-}
 
  /* ----------------------------------------------TEXTO DE LOGO ------------------- */
 
 #siembra {
-    font-size: 20vw;
     text-align: center;
     width: 90vw;
 }
@@ -113,12 +95,10 @@ footer div.container {
     text-align: center;
     align-content: center;
 }
-.comprar {
-    position: relative;
-    bottom: 50px;
-    font-size: 2em;
-}
+
 /*----------------------------------- SECCION DE BANNER LOGO---------------------------*/
+
+
 header section #logo {
     display: flex;
     flex-direction: column;
@@ -137,6 +117,9 @@ header section #logo {
     height: 60vh;
     color: aliceblue;
     align-content: center;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px #3D3D3D;
 }
 
 .logo{
@@ -145,41 +128,14 @@ header section #logo {
 
 section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
 }
 
 /*---------------------------- DIV DE LA TABLA DE HORARIOS-----------------------*/
-main div.horarios{
-    font-family: "Roboto", serif;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    background-color: #578E7E;
-    color: white;
-    text-shadow: 2px 2px 5px rgb(34,34,34);
-    text-align: center;
-    width: 100%;
-    padding: 100px 0px;
-}
 
-#titulo-horario {
-    margin: 0;
-}
-.container-horario {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-.tabla-horario {
-    width: 100%;
-}
-
-
-table th, table td {
-    padding: 10px;
-}
 
 /* <!-------------------------- FORMULARIO DE SUSCRIPCION -----------------------> */
 div.formulario-subs {
@@ -190,7 +146,6 @@ div.formulario-subs {
     width: 100%;
     padding: 10px;
     color: black;
-    background-color: #57886c;
 }
 
 .input-subs {
@@ -215,8 +170,7 @@ main div div div.div-form{
 }
 h1.titulo-subs {
     padding: 30px 0px 50px 0px;
-    color: rgb(233, 233, 233);
-    text-shadow: 2px 2px 5px black;
+    color: #3D3D3D;
     font-size: 2em;
     width: 100%;
 }
@@ -254,15 +208,15 @@ div.instagram h2 {
 }
 
 .container-contact {
-    background-color: #578E7E;
     width: 100%;
     padding: 30px 10px;    
-    color: whitesmoke;
+    color: #3D3D3D;
     text-align: center;
 }
 
 #contact h2 {
     font-size: 1.5em;
+    text-align: center;
 }
 
 /*--------------------------------- CLASES DE CONTACTOS -------------------- */
@@ -295,39 +249,30 @@ div.wsp-contacto h2 {
 
 /* ---------------------------------MAPA DE COMO LLEGAR -------------------------- */
 #mapa-iframe {
-
+    box-shadow: 1px 1px 5px #3D3D3D;
+    border-radius: 30px;
     width: 100%;
-    height: 65vh;
+    height: 60vh;
 }
 div.mapa-google {
-    background-color: #3D3D3D;
 }
 
 
 /* ----------------------------------comentarios-------------------------- */
 .container-cartas {
     padding: 20px 15px;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 10px;
     justify-content: center;
     align-items: center;
     padding-left: 10px;
-    background-color: #FFFAEC;
+    background-color: #ffffff;
 
 }
 
-img {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center ;
-    border-radius: 30px;
-    border: 3px solid whitesmoke;
-    box-shadow: 1px 1px 5px #3D3D3D ;
-}
+
 
 #comment1, #comment2, #comment10, #comment9{
     display: none;
@@ -341,9 +286,13 @@ img {
     height: 70px;
 }
 
+.carrusel {
+    height: 40vh;
+}
 
-
-
+div.footer--boton-centrar {
+    margin-top: 40px;
+}
 
 
 
@@ -355,7 +304,9 @@ img {
 
 
 @media (min-width: 600px) {
-
+.carrusel {
+    display: none;
+}
 
 /*HERO*/
     #siembra {
@@ -371,8 +322,15 @@ img {
     font-size: 3.2em;
     }
 
+    div.footer--boton-centrar {
+        margin-top: 30px;
+    }
+    footer {
+        padding: 20px 10px;
+    }
 /*COMENTARIOS*/
     .container-cartas {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     }
@@ -384,9 +342,6 @@ img {
     .input-subs {
     width: 60vw;
     
-    footer{
-    padding: 50px 0px;
-    }
     }
 
 
@@ -397,8 +352,10 @@ img {
     }
     header section #logo {
     display: flex;
-    height: 80vh;
+    height: 40vh;
     }
+
+
 /*horarios de inicio*/
     main div.horarios {
     align-items: center;
@@ -446,36 +403,64 @@ img {
     gap: 30px;
     }
 
-    img {
-    width: 90%;
-    }
+
 /* mapa */
     #mapa-iframe {
-    height: 90vh;
+    height: 65vh;
     width: 100%;
-    box-shadow: 1px 1px 30px #F5ECD5;
+    box-shadow: 1px 1px 30px #3D3D3D;
+    border-radius: 30px;
     }
     div.mapa-google {
     padding: 30px 20px;
-    background-color: #3D3D3D;
     }
     
 /* footer comprar*/
     .comprar {
-    position: initial;
     font-size: 2.5em;
     }
-    footer div.container {
+
+    footer div div.container {
     display: flex;
     flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-around;
     }
-    .container {
-    width: 70%;
+
+    div.container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
     }
+
     footer {
-    padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
     }
-}
+
+    .container-footer{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .footer--boton-centrar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .cta-comprar {
+        width: 900px;
+    }
+
 
 div.contact {
     display: grid;
