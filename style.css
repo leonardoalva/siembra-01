@@ -68,7 +68,7 @@ header {
 
  /* ----------------------------------------------TEXTO DE LOGO ------------------- */
 
-#siembra__logo{
+#siembra {
     text-align: center;
     width: 90vw;
 }
@@ -82,7 +82,7 @@ footer {
 
 
 /*---------------------- BOTON CTA PARA COMPRAR EN FUDO APP --------------------------- */
-.footer__callToAction {
+.cta-comprar {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -99,7 +99,7 @@ footer div.container {
 /*----------------------------------- SECCION DE BANNER LOGO---------------------------*/
 
 
-header .header__section #header__section__logo {
+header section #logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,11 +122,11 @@ header .header__section #header__section__logo {
     box-shadow: 1px 1px 5px #3D3D3D;
 }
 
-.headser__section__logo{
+.logo{
     width: 90%;
 }
 
-.header__section {
+section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -193,6 +193,59 @@ h1.titulo-subs {
 /* ------------------------------CONTACTO -----------------------------------*/
 
 
+div.contact {
+    height: 70%;
+    padding: 30px 15px 30px 15px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.instagram h2 {
+    margin-bottom: 30px;
+}
+
+.container-contact {
+    width: 100%;
+    padding: 30px 10px;    
+    color: #3D3D3D;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*--------------------------------- CLASES DE CONTACTOS -------------------- */
+.instagram{
+    align-items: center;
+    text-shadow: 2px 2px 4px grey;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+div.email h2 {
+    margin-bottom: 30px;
+}
+.email{
+    align-items: center;
+    text-shadow: 2px 2px 4px grey;
+    width: 100%;
+    margin-bottom: 50px;
+}
+div.wsp-contacto h2 {
+    margin-bottom: 30px;
+}
+.wsp-contacto{
+    align-items: center;   
+    text-shadow: 2px 2px 4px grey;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
 
 /* ---------------------------------MAPA DE COMO LLEGAR -------------------------- */
 #mapa-iframe {
@@ -225,12 +278,19 @@ div.mapa-google {
     display: none;
 }
 
+.img-contact {    
+    display: none;
+    box-shadow: none;
+    border: none;
+    width: 70px;
+    height: 70px;
+}
 
 .carrusel {
     height: 40vh;
 }
 
-div.footer__boton-centrar {
+div.footer--boton-centrar {
     margin-top: 40px;
 }
 
@@ -249,7 +309,7 @@ div.footer__boton-centrar {
 }
 
 /*HERO*/
-    #siembra__logo {
+    #siembra {
         font-size: 15vw;
     }
 /*HORARIOS*/
@@ -262,7 +322,7 @@ div.footer__boton-centrar {
     font-size: 3.2em;
     }
 
-    div.footer__boton-centrar {
+    div.footer--boton-centrar {
         margin-top: 30px;
     }
     footer {
@@ -287,15 +347,30 @@ div.footer__boton-centrar {
 
 @media (min-width:1024px) {
 
-    #siembra_logo {
+    #siembra {
     font-size: 9vw;
     }
-    header .header__section #header__section__logo {
+    header section #logo {
     display: flex;
     height: 40vh;
     }
 
 
+/*horarios de inicio*/
+    main div.horarios {
+    align-items: center;
+    } 
+
+    table th, table td {
+    font-size: 2.3vw;
+    }
+    .tabla-horario {
+    width: 70%;
+    }
+    .container-horario {
+    width: 100%;
+    align-items: center;
+    }
 /* suscripcion */
     .container-subs {
     display: flex;
@@ -382,9 +457,42 @@ div.footer__boton-centrar {
         justify-items: center;
     }
 
-    .footer__callToAction {
-        width: 980px;
+    .cta-comprar {
+        width: 900px;
     }
 
 
+div.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr;
+}
+.instagram {
+    display: flex;
+    width: 30vw;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email {
+    display: flex;
+    width: 30vw;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wsp-contacto {
+    display: flex;
+    width: 30vw;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px 0px 50px 0px;
+}
+
+.img-contact {
+    display: flex;
 }
