@@ -99,7 +99,7 @@ footer div.container {
 /*----------------------------------- SECCION DE BANNER LOGO---------------------------*/
 
 
-header section #logo {
+header section .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,11 +122,9 @@ header section #logo {
     box-shadow: 1px 1px 5px #3D3D3D;
 }
 
-.logo{
-    width: 90%;
-}
 
-section {
+
+.section__logo {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -350,7 +348,7 @@ div.footer--boton-centrar {
     #siembra {
     font-size: 9vw;
     }
-    header section #logo {
+    header .section__logo #logo {
     display: flex;
     height: 40vh;
     }
