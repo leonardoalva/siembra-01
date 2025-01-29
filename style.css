@@ -82,7 +82,7 @@ footer {
 
 
 /*---------------------- BOTON CTA PARA COMPRAR EN FUDO APP --------------------------- */
-.cta-comprar {
+.footer__cta {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -269,8 +269,12 @@ div#wsp-contacto h2 {
     height: 70px;
 }
 
-.carrusel {
+#carouselExampleSlidesOnly {
     height: 40vh;
+}
+
+.carrousel_imgW {
+    max-width: 200px;
 }
 
 div.footer--boton-centrar {
@@ -312,7 +316,7 @@ div.footer--boton-centrar {
 
 
 @media (min-width: 600px) {
-    .carrusel {
+    #carouselExampleSlidesOnly {
         display: none;
     }
 
@@ -489,7 +493,7 @@ div.footer--boton-centrar {
         justify-items: center;
     }
 
-    .cta-comprar {
+    .footer__cta {
         width: 900px;
     }
 
