@@ -114,7 +114,7 @@ header section .logo {
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    height: 60vh;
+    height: 40vh;
     color: aliceblue;
     align-content: center;
     border: 3px solid black;
@@ -240,9 +240,6 @@ div#wsp-contacto h2 {
     width: 100%;
     height: 60vh;
 }
-div.mapa-google {
-}
-
 
 /* ----------------------------------comentarios-------------------------- */
 .container-cartas {
@@ -281,6 +278,31 @@ div.footer--boton-centrar {
 }
 
 
+/* ---------------------------------- TABLA BOOTSTRAP DE INDEX ---------------------------------*/
+.table__centrar {
+    text-align: center;
+}
+
+.borderRadius {
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -290,9 +312,9 @@ div.footer--boton-centrar {
 
 
 @media (min-width: 600px) {
-.carrusel {
-    display: none;
-}
+    .carrusel {
+        display: none;
+    }
 
 /*HERO*/
     #siembra {
@@ -329,12 +351,31 @@ div.footer--boton-centrar {
     width: 60vw;
     
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width:1024px) {
 
     #siembra {
-    font-size: 9vw;
+    font-size: 15vw;
     }
     header .section__logo #logo {
     display: flex;
