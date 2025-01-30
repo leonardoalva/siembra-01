@@ -57,19 +57,17 @@
 </header>
 <main>
 <!--------- FORMULARIO DE SUSCRIPCION ------->
-<div class="formulario-subs" id="formulario-subs">
+<div class="formularioSubs" id="formularioSubs">
     <div class="container-subs">
-        <div class="span-sub">
-            <div class="span-sub">
-                <h1 class="titulo-subs">COMPLETA TUS DATOS <br> Y ENTERATE DE TODO.</h1>
-            </div>
+        <div class="divTitulo__sub">
+          <h1 class="titulo-subs">COMPLETA TUS DATOS <br> Y ENTERATE DE TODO.</h1>
         </div>
         <div class="div-form">
             <form action="/formulario" method="post">
                 <ul>
                 <li><input class="input-subs" type="text" placeholder="ingrese su nombre" required autocomplete="on"></li>
                 <li><input class="input-subs" type="text" placeholder="ingrese su apellido" required autocomplete="on"></li>
-                <li><input class="input-subs" type="tel" placeholder="ingrese su celular sin 0 y sin 15" pattern="[0-9]{10}" required autocomplete="on"></li>
+                <li><input class="input-subs" type="tel" placeholder="celular sin 0 y sin 15" pattern="[0-9]{10}" required autocomplete="on"></li>
                 <li><input class="input-subs" type="email" placeholder="ingrese su correo electronico" autocomplete="on"></li>
                 </ul>
             <button id="suscripcion-bot" type="submit">SUSCRIBIRME</button>            
@@ -80,23 +78,23 @@
 <!--------- FORMULARIO DE SUSCRIPCION ------->
 </main>
 <footer>
-    <div class="footer__cta">
-        <div class="container">
-            <div>
-                <h1 class="comprar">COMPRAR AHORA</h1>
-            </div>
-            <div class="footer--boton-centrar">
-                <form action="https://menu.fu.do/siembra"> 
-                    <button class="boton-comprar">
-                    IR A LA TIENDA
-                    </button>        
-                </form>  
-            </div>
-        </div>
-    <br>
-        &copy; Siembra - Gastronomia de Verdad
-    </div>
-    </footer>
+  <div class="footer__cta">
+      <div class="container">
+          <div>
+              <h1 class="comprar">COMPRAR AHORA</h1>
+          </div>
+          <div class="footer__boton-centrar">
+              <form action="https://menu.fu.do/siembra"> 
+                  <button class="boton-comprar">
+                  IR A LA TIENDA
+                  </button>        
+              </form>  
+          </div>
+      </div>
+  <br>
+      &copy; Siembra - Gastronomia de Verdad
+  </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

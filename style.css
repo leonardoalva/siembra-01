@@ -76,7 +76,7 @@ header {
 footer {
     text-align: center;
     color: rgb(233, 233, 233);
-    padding: 100px 10px;
+    padding: 50px 10px;
     background-color: #3D3D3D;
 }
 
@@ -127,14 +127,18 @@ header section .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 10px;
+    padding: 0px 10px;
 }
 
-/*---------------------------- DIV DE LA TABLA DE HORARIOS-----------------------*/
 
+
+/*---------------------------- DIV DE LA TABLA DE HORARIOS-----------------------*/
+.tabla__index {
+    padding-top: 20px;
+}
 
 /* <!-------------------------- FORMULARIO DE SUSCRIPCION -----------------------> */
-div.formulario-subs {
+div.formularioSubs {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,7 +175,7 @@ h1.titulo-subs {
     width: 100%;
 }
 
-.span-sub {
+.divTitulo__sub {
     width: 100%;
 }
 
@@ -191,7 +195,7 @@ h1.titulo-subs {
 
 div.contact {
     height: 70%;
-    padding: 30px 15px 30px 15px;
+    padding: 30px 15px 10px 15px;
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -205,7 +209,7 @@ div.instagram h2 {
 
 .container__contact {
     width: 100%;
-    padding: 30px 10px;    
+    padding: 0px 10px 10px 10px;    
     color: #3D3D3D;
     text-align: center;
 }
@@ -234,7 +238,7 @@ div#wsp-contacto h2 {
 
 
 /* ---------------------------------MAPA DE COMO LLEGAR -------------------------- */
-#mapa-iframe {
+#mapaIframe {
     box-shadow: 1px 1px 5px #3D3D3D;
     border-radius: 30px;
     width: 100%;
@@ -277,7 +281,7 @@ div#wsp-contacto h2 {
     max-width: 200px;
 }
 
-div.footer--boton-centrar {
+div.footer__boton-centrar {
     margin-top: 40px;
 }
 
@@ -415,7 +419,7 @@ div.footer--boton-centrar {
     justify-content: center;
     text-align: center;
     }
-    .span-sub {
+    .divTitulo__sub {
     font-size: 1.2em;
     display: flex;
     flex-direction: column;
@@ -426,11 +430,11 @@ div.footer--boton-centrar {
     main div div div.div-form {
     width: 50%;
     }
-    div.formulario-subs{
+    div.formularioSubs{
     padding: 40px 0px;
     }
     .input-subs {
-    width: 50%;
+    width: 80%;
     }
 /*comentarios cambio de grid a desktop version*/
     .container-cartas{
@@ -441,13 +445,13 @@ div.footer--boton-centrar {
 
 
 /* mapa */
-    #mapa-iframe {
+    #mapaIframe {
     height: 65vh;
     width: 100%;
     box-shadow: 1px 1px 30px #3D3D3D;
     border-radius: 30px;
     }
-    div.mapa-google {
+    div.mapaGoogle {
     padding: 30px 20px;
     }
     
@@ -485,7 +489,7 @@ div.footer--boton-centrar {
         gap: 50px;
     }
 
-    .footer--boton-centrar {
+    .footer__boton-centrar {
         display: flex;
         flex-direction: row;
         align-items: center;
