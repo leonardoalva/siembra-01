@@ -203,9 +203,7 @@ div.contact {
     align-items: center;
 }
 
-div.instagram h2 {
-    margin-bottom: 30px;
-}
+
 
 .container__contact {
     width: 100%;
@@ -222,17 +220,7 @@ div.instagram h2 {
 /*--------------------------------- CLASES DE CONTACTOS -------------------- */
 .contactos__unicos {
     align-items: center;
-    text-shadow: 2px 2px 4px grey;
     width: 100%;
-    margin-bottom: 50px;
-}
-
-div#email h2 {
-    margin-bottom: 30px;
-}
-
-div#wsp-contacto h2 {
-    margin-bottom: 30px;
 }
 
 
@@ -266,7 +254,6 @@ div#wsp-contacto h2 {
 }
 
 .img-contact {    
-    display: none;
     box-shadow: none;
     border: none;
     width: 70px;
