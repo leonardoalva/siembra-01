@@ -1,0 +1,82 @@
+@media (min-width: 600px){
+/*logo*/
+nav{
+    section{
+        div{
+            #siembra {
+                font-size: 15vw;
+            }
+        }
+    }
+}
+
+/*COMENTARIOS*/
+main {
+    #carouselExampleSlidesOnly {
+        display: none;
+    }
+    .container-cartas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        padding: 0px 10px;
+    }
+}
+main{
+    #container-cartas{
+        #comment1{display: flex;
+        width: 100%;}
+        #comment2{display: flex;
+        width: 100%;}
+        #comment3{width: 100%;}
+        #comment4{width: 100%;}
+        #comment5{width: 100%;}
+        #comment6{width: 100%;}
+        #comment7{width: 100%;}
+        #comment8{width: 100%;}
+        #comment9{display: flex;
+        width: 100%;}
+        #comment10{display: flex;
+        width: 100%;}
+    }
+}
+
+/*SUBSCRIPCION*/
+main{
+    div{
+        div{
+            div{
+                form{
+                    ul{
+                        .input-subs {
+                            width: 60vw;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+footer{
+    padding: 20px 10px;
+    div{
+        div{
+            .comprar {
+                font-size: 3.2em;
+            }            
+            .footer__boton-centrar {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+}

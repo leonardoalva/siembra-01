@@ -1,0 +1,61 @@
+/*PAGINA DE CONTACTOS */
+
+main {
+    .container__contact {
+        width: 100%;
+        padding: 0px 10px 10px 10px;    
+        color: #3D3D3D;
+        text-align: center;
+        div.contact {
+            height: 70%;
+            padding: 30px 15px 10px 15px;
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .contactos__unicos {
+                align-items: center;
+                text-shadow: 2px 2px 4px grey;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            .instagram{
+                .img-contact {    
+                    display: none;
+                    box-shadow: none;
+                    border: none;
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            h2{
+                    margin-bottom: 30px;
+            }
+            div#email{
+                 h2 {
+                margin-bottom: 30px;
+                .img-contact {    
+                    display: none;
+                    box-shadow: none;
+                    border: none;
+                    width: 70px;
+                    height: 70px;
+                }
+                }
+            }
+            div#wsp-contacto{
+                h2 {
+                margin-bottom: 30px;
+                .img-contact {    
+                    display: none;
+                    box-shadow: none;
+                    border: none;
+                    width: 70px;
+                    height: 70px;
+                }
+                }
+            }
+        }
+    }
+}
