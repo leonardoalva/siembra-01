@@ -1,3 +1,4 @@
+/*import de variables*/
 /*import de reset*/
 * {
   margin: 0;
@@ -31,23 +32,9 @@ p {
   font-size: 1.3em;
 }
 
-ul {
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  font-size: 1.6em;
-  font-weight: 300;
-  color: white;
-  padding: 10px;
-}
-
 a:hover {
   text-transform: uppercase;
-  color: cornsilk;
+  color: #F5ECD5;
   text-shadow: 1px 1px 10px rgb(159, 159, 159);
 }
 
@@ -56,7 +43,7 @@ a {
   font-weight: bolder;
   font-size: 0.8em;
   text-decoration: none;
-  color: rgb(233, 233, 233);
+  color: #F5ECD5;
 }
 
 button {
@@ -66,7 +53,7 @@ button {
   border: 1px solid #3D3D3D;
   border-radius: 20px;
   padding: 15px 30px;
-  color: white;
+  color: #F5ECD5;
 }
 
 button:hover {
@@ -87,7 +74,7 @@ header {
 
 footer {
   text-align: center;
-  color: rgb(233, 233, 233);
+  color: #F5ECD5;
   padding: 50px 10px;
   background-color: #3D3D3D;
 }
@@ -122,7 +109,7 @@ header section .logo {
   background-position: center center;
   width: 100%;
   height: 40vh;
-  color: aliceblue;
+  color: #F5ECD5;
   align-content: center;
   border: 3px solid black;
   border-radius: 30px;
@@ -354,15 +341,7 @@ main div.formularioSubs .container-subs .divTitulo__sub h1.titulo-subs {
   #siembra {
     font-size: 15vw;
   }
-  main div .contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr;
-  }
-  main div .contact #wsp-contacto {
-    margin-bottom: 0px 0px 50px 0px;
-  }
-  main div .contact .contactos__unicos {
+  main div .contactos__unicos {
     display: flex;
     width: 30vw;
     object-fit: cover;
@@ -370,64 +349,75 @@ main div.formularioSubs .container-subs .divTitulo__sub h1.titulo-subs {
     justify-content: center;
     align-items: center;
   }
-  main div .contact .contactos__unicos .img-contact {
+  main div .contactos__unicos .img-contact {
     display: flex;
   }
-  main div .mapaGoogle {
+  main .mapaGoogle {
     padding: 30px 20px;
   }
-  main div .container-cartas {
+  main .container-cartas {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
   }
-  main div div #mapaIframe {
+  main div #mapaIframe {
     height: 65vh;
     width: 100%;
     box-shadow: 1px 1px 30px #3D3D3D;
     border-radius: 30px;
   }
-  main div div table thead th {
+  main div table thead th {
     font-size: 2.3vw;
   }
-  main div div table tbody td {
+  main div table tbody td {
     font-size: 2.3vw;
-  }
-  header .section__logo .logo {
-    display: flex;
-    height: 40vh;
-  }
-  header .section__logo .logo #siembra {
-    font-size: 15vw;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-  }
-  footer .footer__cta {
-    width: 900px;
-  }
-  footer .footer__cta .container {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: center;
-    justify-content: space-around;
-  }
-  footer .footer__cta .container .footer__boton-centrar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-  }
-  footer .footer__cta .container div .comprar {
-    font-size: 2.5em;
   }
 }
+header .section__logo .logo {
+  display: flex;
+  height: 40vh;
+}
+header .section__logo .logo #siembra {
+  font-size: 15vw;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+footer .footer__cta {
+  width: 900px;
+}
+footer .footer__cta .container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .footer__cta .container .footer__boton-centrar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+footer .footer__cta .container div .comprar {
+  font-size: 2.5em;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr;
+}
+.contact #wsp-contacto {
+  margin-bottom: 0px 0px 50px 0px;
+}
+
 /*import mediaDesktop suscripcion*/
 main .formularioSubs {
   padding: 40px 0px;

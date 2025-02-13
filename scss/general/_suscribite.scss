@@ -37,7 +37,7 @@ main{
                 width: 100%;
                 h1.titulo-subs {
                     padding: 30px 0px 50px 0px;
-                    color: #3D3D3D;
+                    color: nth($coloresPaleta, $n:2);
                     font-size: 2em;
                     width: 100%;
                 }

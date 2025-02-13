@@ -2,7 +2,7 @@ main {
     div {
         div {
             #mapaIframe {
-                box-shadow: 1px 1px 5px #3D3D3D;
+                box-shadow: 1px 1px 5px nth($coloresPaleta, $n:2);
                 border-radius: 30px;
                 width: 100%;
                 height: 60vh;
