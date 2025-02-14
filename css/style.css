@@ -47,19 +47,17 @@ a {
 }
 
 button {
-  background-color: #57886c;
-  font-size: 1.5em;
   font-weight: bold;
-  border: 1px solid #3D3D3D;
+  border: 1px solid rgba(61, 61, 61, 0.6901960784);
   border-radius: 20px;
   padding: 15px 30px;
-  color: #F5ECD5;
+  color: rgba(61, 61, 61, 0.6901960784);
 }
 
 button:hover {
   background-color: #F5ECD5;
   cursor: pointer;
-  color: #3D3D3D;
+  color: rgba(61, 61, 61, 0.6901960784);
 }
 
 header {
@@ -73,15 +71,15 @@ header {
 }
 
 footer {
+  flex-direction: column;
+  align-content: center;
+  height: 30vh;
   text-align: center;
-  color: #F5ECD5;
+  color: rgba(61, 61, 61, 0.6901960784);
   padding: 50px 10px;
-  background-color: #3D3D3D;
+  align-items: center;
+  background-color: white;
 }
-footer div div div.footer__boton-centrar {
-  margin-top: 40px;
-}
-
 /*---------------------- BOTON CTA PARA COMPRAR EN FUDO APP --------------------------- */
 .footer__cta {
   display: flex;
@@ -99,21 +97,21 @@ footer div.container {
 
 /*----------------------------------- SECCION DE BANNER LOGO---------------------------*/
 header section .logo {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url(../imagenes/rosca.png);
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url(../imagenes/tacos.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
   height: 40vh;
   color: #F5ECD5;
   align-content: center;
   border: 3px solid black;
   border-radius: 30px;
-  box-shadow: 1px 1px 5px #3D3D3D;
+  box-shadow: 1px 1px 5px rgba(61, 61, 61, 0.6901960784);
 }
 
 .section__logo {
@@ -140,6 +138,7 @@ main .tabla__index div .table__centrar {
 /*PAGINA DE CONTACTOS */
 main .container__contact {
   width: 100%;
+  display: flex;
   padding: 0px 10px 10px 10px;
   color: #3D3D3D;
   text-align: center;
@@ -147,10 +146,8 @@ main .container__contact {
 main .container__contact div.contact {
   height: 70%;
   padding: 30px 15px 10px 15px;
-  display: block;
   flex-direction: column;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
 }
 main .container__contact div.contact .contactos__unicos {
@@ -159,7 +156,7 @@ main .container__contact div.contact .contactos__unicos {
   width: 100%;
   margin-bottom: 50px;
 }
-main .container__contact div.contact .instagram .img-contact {
+main .container__contact div.contact #instagram .img-contact {
   display: none;
   box-shadow: none;
   border: none;
@@ -172,27 +169,24 @@ main .container__contact div.contact h2 {
 main .container__contact div.contact div#email h2 {
   margin-bottom: 30px;
 }
-main .container__contact div.contact div#email h2 .img-contact {
+main .container__contact div.contact div#email .img-contact {
   display: none;
   box-shadow: none;
   border: none;
   width: 70px;
   height: 70px;
 }
-main .container__contact div.contact div#wsp-contacto h2 {
-  margin-bottom: 30px;
-}
-main .container__contact div.contact div#wsp-contacto h2 .img-contact {
-  display: none;
+main .container__contact div.contact div#wsp-contacto .img-contact {
+  display: flex;
   box-shadow: none;
   border: none;
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
 }
 
 /*import de mapa*/
 main div div #mapaIframe {
-  box-shadow: 1px 1px 5px #3D3D3D;
+  box-shadow: 1px 1px 5px rgba(61, 61, 61, 0.6901960784);
   border-radius: 30px;
   width: 100%;
   height: 60vh;
@@ -228,19 +222,19 @@ main .container-cartas #comment10 {
 
 /*import suscribite*/
 main div.formularioSubs {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 100%;
   padding: 10px;
   color: black;
 }
 main div.formularioSubs .container-subs {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 main div.formularioSubs .container-subs .div-form {
   width: 80%;
@@ -251,6 +245,9 @@ main div.formularioSubs .container-subs .div-form #suscripcion-bot {
 main div.formularioSubs .container-subs .div-form form {
   width: 100%;
   padding-bottom: 30px;
+}
+main div.formularioSubs .container-subs .div-form form ul {
+  list-style: none;
 }
 main div.formularioSubs .container-subs .div-form form ul li {
   padding: 5px;
@@ -267,7 +264,7 @@ main div.formularioSubs .container-subs .divTitulo__sub {
 }
 main div.formularioSubs .container-subs .divTitulo__sub h1.titulo-subs {
   padding: 30px 0px 50px 0px;
-  color: #3D3D3D;
+  color: rgba(61, 61, 61, 0.6901960784);
   font-size: 2em;
   width: 100%;
 }
@@ -315,12 +312,12 @@ main div.formularioSubs .container-subs .divTitulo__sub h1.titulo-subs {
     width: 100%;
   }
   main #container-cartas #comment9 {
-    display: flex;
     width: 100%;
+    display: flex;
   }
   main #container-cartas #comment10 {
-    display: flex;
     width: 100%;
+    display: flex;
   }
   /*SUBSCRIPCION*/
   main div div div form ul .input-subs {
@@ -356,6 +353,7 @@ main div.formularioSubs .container-subs .divTitulo__sub h1.titulo-subs {
     padding: 30px 20px;
   }
   main .container-cartas {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
@@ -384,8 +382,6 @@ header .section__logo .logo #siembra {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 10px 0px;
 }
 footer .footer__cta {
@@ -393,14 +389,11 @@ footer .footer__cta {
 }
 footer .footer__cta .container {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
   align-items: center;
   justify-content: space-around;
 }
 footer .footer__cta .container .footer__boton-centrar {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   justify-items: center;

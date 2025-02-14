@@ -37,13 +37,11 @@ a { text-transform: uppercase;
 
 
 button {
-    background-color: nth($coloresPaleta, $n:1);
-    font-size: 1.5em;
     font-weight: bold;
     border: 1px solid nth($coloresPaleta, $n:2);
     border-radius: 20px;
     padding: 15px 30px;
-    color: nth($coloresPaleta, $n:3);
+    color: nth($coloresPaleta, $n:2 );
 }
 
 button:hover {
@@ -63,14 +61,17 @@ header {
 }
 
 footer {
+    flex-direction: column;
+    align-content: center;
+    height: 30vh;
     text-align: center;
-    color: nth($coloresPaleta, $n:3);
+    color: nth($coloresPaleta, $n:2);
     padding: 50px 10px;
-    background-color: nth($coloresPaleta, $n:2);
+    align-items: center;
+    background-color: white;
     div{
         div{
             div.footer__boton-centrar {
-                margin-top: 40px;
                 }
         }
     }
@@ -97,7 +98,7 @@ footer div.container {
 
 
 header section .logo {
-    display: flex;
+    @include ocuparTodoFlex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -106,11 +107,10 @@ header section .logo {
        rgba(0,0,0,1),
        rgba(0,0,0,0.5 )
     )
-    ,url(../imagenes/rosca.png);
+    ,url(../imagenes/tacos.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100%;
     height: 40vh;
     color: nth($coloresPaleta, $n:3);
     align-content: center;
@@ -120,8 +120,7 @@ header section .logo {
 }
 
 .section__logo {
-    width: 100%;
-    display: flex;
+    @include ocuparTodoFlex;
     flex-direction: column;
     align-items: center;
     padding: 0px 10px;

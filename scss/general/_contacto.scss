@@ -3,24 +3,24 @@
 main {
     .container__contact {
         width: 100%;
+        display: flex;
         padding: 0px 10px 10px 10px;    
         color: #3D3D3D;
         text-align: center;
         div.contact {
             height: 70%;
             padding: 30px 15px 10px 15px;
-            display: block;
             flex-direction: column;
             justify-content: center;
-            flex-direction: column;
             align-items: center;
             .contactos__unicos {
                 align-items: center;
                 text-shadow: 2px 2px 4px grey;
                 width: 100%;
                 margin-bottom: 50px;
+
             }
-            .instagram{
+            #instagram{
                 .img-contact {    
                     display: none;
                     box-shadow: none;
@@ -34,27 +34,23 @@ main {
             }
             div#email{
                  h2 {
-                margin-bottom: 30px;
+                margin-bottom: 30px;}
                 .img-contact {    
                     display: none;
                     box-shadow: none;
                     border: none;
                     width: 70px;
                     height: 70px;
-                }
                 }
             }
             div#wsp-contacto{
-                h2 {
-                margin-bottom: 30px;
                 .img-contact {    
-                    display: none;
+                    display: flex;
                     box-shadow: none;
                     border: none;
-                    width: 70px;
-                    height: 70px;
-                }
-                }
+                    width: 150px;
+                    height: 150px;
+                } 
             }
         }
     }
