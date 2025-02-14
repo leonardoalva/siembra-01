@@ -16,9 +16,7 @@ main {
         display: none;
     }
     .container-cartas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        @include grid (grid, repeat(2, 1fr), repeat(5, 1fr));
         padding: 0px 10px;
     }
 }
@@ -34,10 +32,11 @@ main{
         #comment6{width: 100%;}
         #comment7{width: 100%;}
         #comment8{width: 100%;}
-        #comment9{display: flex;
-        width: 100%;}
-        #comment10{display: flex;
-        width: 100%;}
+        #comment9{
+            @include ocuparTodoFlex;
+        }
+        #comment10{
+            @include ocuparTodoFlex;}
     }
 }
 

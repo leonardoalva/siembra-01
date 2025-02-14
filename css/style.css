@@ -99,6 +99,7 @@ footer div.container {
 
 /*----------------------------------- SECCION DE BANNER LOGO---------------------------*/
 header section .logo {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +108,6 @@ header section .logo {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
   height: 40vh;
   color: #F5ECD5;
   align-content: center;
@@ -228,19 +228,19 @@ main .container-cartas #comment10 {
 
 /*import suscribite*/
 main div.formularioSubs {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 100%;
   padding: 10px;
   color: black;
 }
 main div.formularioSubs .container-subs {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 main div.formularioSubs .container-subs .div-form {
   width: 80%;
@@ -315,12 +315,12 @@ main div.formularioSubs .container-subs .divTitulo__sub h1.titulo-subs {
     width: 100%;
   }
   main #container-cartas #comment9 {
-    display: flex;
     width: 100%;
+    display: flex;
   }
   main #container-cartas #comment10 {
-    display: flex;
     width: 100%;
+    display: flex;
   }
   /*SUBSCRIPCION*/
   main div div div form ul .input-subs {
@@ -356,6 +356,7 @@ main div.formularioSubs .container-subs .divTitulo__sub h1.titulo-subs {
     padding: 30px 20px;
   }
   main .container-cartas {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;

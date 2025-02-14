@@ -1,16 +1,15 @@
 main{
     div.formularioSubs {
-        display: flex;
+        @include ocuparTodoFlex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        width: 100%;
         padding: 10px;
         color: black;
-        .container-subs{display: flex;
+        .container-subs{
+            @include ocuparTodoFlex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
             .div-form{
             width: 80%;
                 #suscripcion-bot {

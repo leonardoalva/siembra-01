@@ -97,7 +97,7 @@ footer div.container {
 
 
 header section .logo {
-    display: flex;
+    @include ocuparTodoFlex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -110,7 +110,6 @@ header section .logo {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100%;
     height: 40vh;
     color: nth($coloresPaleta, $n:3);
     align-content: center;
@@ -120,8 +119,7 @@ header section .logo {
 }
 
 .section__logo {
-    width: 100%;
-    display: flex;
+    @include ocuparTodoFlex;
     flex-direction: column;
     align-items: center;
     padding: 0px 10px;
