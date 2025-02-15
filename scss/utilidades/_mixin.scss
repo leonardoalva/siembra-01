@@ -1,0 +1,12 @@
+// mixing de grid
+@mixin grid($grid, $columns, $rows){
+    display: $grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}
+
+@mixin ocuparTodoFlex {
+    width: 100%;
+    display: flex;
+}
+
